@@ -1,0 +1,19 @@
+.filter {
+  padding: 4px;
+  background-color: #30363e;
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  &:hover {
+    background-color: rgba(48, 54, 62, 0.8);
+  }
+
+  @media (min-width: 768px) {
+    height: 42px;
+    width: 42px;
+    img {
+      width: 24px;
+      height: 36px;
+    }
+  }
+}

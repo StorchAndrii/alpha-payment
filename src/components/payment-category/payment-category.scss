@@ -1,0 +1,18 @@
+.payment-category {
+  margin-top: 24px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(clamp(130px, 15vw, 172px), 1fr)
+    );
+
+    gap: 18px;
+    margin-top: 12px;
+  }
+}

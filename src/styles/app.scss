@@ -1,0 +1,26 @@
+.app {
+  main {
+    padding: 0 20px;
+    @media (min-width: 768px) {
+      padding: 0 120px 120px;
+    }
+  }
+  &__title {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 800;
+
+    @media (min-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+  &__subtitle {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 800;
+
+    @media (min-width: 768px) {
+      margin-top: 24px;
+    }
+  }
+}

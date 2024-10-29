@@ -1,0 +1,27 @@
+.promo-code-form {
+  margin-top: 32px;
+
+  @media (min-width: 768px) {
+    margin-top: 42px;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  &__form {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 16px;
+      align-items: end;
+      .red-btn {
+        max-width: 152px;
+        padding: 7px 0;
+      }
+    }
+  }
+}

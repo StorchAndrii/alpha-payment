@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "image": "/images/payment-methods/sticpay-logo.svg",
+      "status": "Processing",
+      "withdraw": "by SticPay, USD",
+      "transactionsNumber": 142354,
+      "paymentDate": "05.12 at 3:40PM",
+      "amountPayed": 23.05
+    },
+    {
+      "id": 2,
+      "image": "/images/payment-methods/sticpay-logo.svg",
+      "status": "Active",
+      "withdraw": "by SticPay, USD",
+      "transactionsNumber": 142354,
+      "paymentDate": "05.12 at 3:40PM",
+      "amountPayed": 123.27
+    },
+    {
+      "id": 3,
+      "image": "/images/payment-methods/mastercard-logo.svg",
+      "status": "Performed",
+      "withdraw": "by Mastercard, USD",
+      "transactionsNumber": 142354,
+      "paymentDate": "05.12 at 3:40PM",
+      "amountPayed": 80.0
+    }
+  ]
+}

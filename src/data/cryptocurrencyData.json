@@ -1,0 +1,23 @@
+{
+  "title": "Cryptocurrency",
+  "items": [
+    {
+      "id": 1,
+      "title": "BTC",
+      "image": "/images/cryptocurrency/bitcoin_logo.svg",
+      "commission": "0"
+    },
+    {
+      "id": 2,
+      "title": "ETH",
+      "image": "/images/cryptocurrency/ethereum-logo.svg",
+      "commission": "0"
+    },
+    {
+      "id": 3,
+      "title": "USDT",
+      "image": "/images/cryptocurrency/tether_Logo.svg",
+      "commission": "0"
+    }
+  ]
+}

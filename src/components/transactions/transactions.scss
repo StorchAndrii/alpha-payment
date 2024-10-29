@@ -1,0 +1,44 @@
+.transactions {
+  margin-top: 32px;
+
+  @media (min-width: 768px) {
+    margin-top: 56px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_title,
+    &_title-desctop {
+      font-size: 24px;
+      font-weight: 800;
+    }
+    &_title {
+      display: block;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &_title-desctop {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+  &__list {
+    margin-top: 2px;
+
+    @media (min-width: 768px) {
+      margin-top: 11px;
+    }
+  }
+  &__show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    .red-btn {
+      max-width: 280px;
+    }
+  }
+}

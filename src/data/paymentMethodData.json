@@ -1,0 +1,61 @@
+{
+  "title": "Cards, E-Money, PIN",
+  "items": [
+    {
+      "id": 1,
+      "title": "Mastercard",
+      "image": "/images/payment-methods/mastercard-logo.svg",
+      "commission": "5",
+      "isPopular": true,
+      "isTrusted": true
+    },
+    {
+      "id": 2,
+      "title": "Visa",
+      "image": "/images/payment-methods/visa-logo.svg",
+      "commission": "5",
+      "isPopular": false,
+      "isTrusted": true
+    },
+    {
+      "id": 3,
+      "title": "Skrill",
+      "image": "/images/payment-methods/skrill_logo.svg",
+      "commission": "0",
+      "isPopular": false,
+      "isTrusted": false
+    },
+    {
+      "id": 4,
+      "title": "Perfect Money, EUR",
+      "image": "/images/payment-methods/pm-logo.svg",
+      "commission": "0",
+      "isPopular": false,
+      "isTrusted": false
+    },
+    {
+      "id": 5,
+      "title": "Piastrix, EUR",
+      "image": "/images/payment-methods/piastrix-logo.svg",
+      "commission": "0",
+      "isPopular": false,
+      "isTrusted": false
+    },
+    {
+      "id": 6,
+      "title": "SticPay, EUR",
+      "image": "/images/payment-methods/sticpay-logo.svg",
+      "commission": "0",
+      "isPopular": false,
+      "isTrusted": false
+    },
+    {
+      "id": 76,
+      "title": "PIN",
+      "image": "/images/payment-methods/pin-logo.svg",
+      "commission": 1,
+      "isPopular": false,
+      "isTrusted": false
+    }
+  ]
+}
