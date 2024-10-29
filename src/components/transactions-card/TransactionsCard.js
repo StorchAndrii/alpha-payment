@@ -45,8 +45,9 @@ const TransactionsCard = ({ transaction }) => {
             <div
               key={index}
               className={
-                detail.subtitle === "Amount Payed" &&
-                "transactions-card__info-transaction_amount"
+                detail.subtitle === "Amount Payed"
+                  ? "transactions-card__info-transaction_amount"
+                  : ""
               }
             >
               <p className="transactions-card__info-transaction_title">
