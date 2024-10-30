@@ -26,7 +26,9 @@ const SideMenu = ({ isOpen, onClose }) => {
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <a href="#">{link.title}</a>
+              <a href="#" onClick={onClose}>
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
