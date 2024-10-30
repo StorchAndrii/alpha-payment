@@ -30,6 +30,7 @@ const Amount = () => {
             key={value}
             onClick={() => handlerChange(value, "increment")}
             className="currency-button"
+            type={"button"}
           >
             +${value}
           </button>
