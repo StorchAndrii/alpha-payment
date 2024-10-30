@@ -5,12 +5,17 @@ import PlusBtn from "../UI/buttons/plus-btn/PlusBtn";
 import UserActions from "../user-actions/UserActions";
 import Avatar from "../avatar/Avatar";
 import SideMenu from "../side-menu/SideMenu";
+import DepositModal from "../modal/deposit-modal/DepositModal";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
+  };
+  const toggleModal = () => {
+    setIsModalOpen((prev) => !prev);
   };
   return (
     <>
@@ -29,10 +34,11 @@ const Header = () => {
           <UserActions />
           <div className="header__balance">
             <BalanceBtn />
-            <PlusBtn />
+            <PlusBtn handlerClick={toggleModal} />
           </div>
           <Avatar />
         </div>
+        <DepositModal isOpen={isModalOpen} onClose={toggleModal} />
       </header>
       <SideMenu isOpen={isMenuOpen} onClose={toggleMenu} />
     </>

@@ -42,14 +42,7 @@ const TransactionsCard = ({ transaction }) => {
         </div>
         <div className="transactions-card__info-transaction">
           {transactionDetails.map((detail, index) => (
-            <div
-              key={index}
-              className={
-                detail.subtitle === "Amount Payed"
-                  ? "transactions-card__info-transaction_amount"
-                  : ""
-              }
-            >
+            <div key={index}>
               <p className="transactions-card__info-transaction_title">
                 {detail.title}
               </p>

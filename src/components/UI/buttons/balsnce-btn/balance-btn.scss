@@ -4,9 +4,8 @@
   background: #4c84ff;
   padding: 10px;
   height: 36px;
-  @media (max-width: 768px) {
-    align-items: center;
-  }
+  align-items: center;
+
   &__total {
     font-size: 14px;
   }

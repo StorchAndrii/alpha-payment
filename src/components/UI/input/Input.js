@@ -1,12 +1,18 @@
-import { useState } from "react";
 import "./input.scss";
 
-const Input = ({ handlerChange, label, htmlFor, placeholder }) => {
-  const [value, setValue] = useState("");
+const Input = ({
+  handlerChange,
+  label,
+  htmlFor,
+  placeholder,
+  currentValue,
+  isIcon,
+  type = "text",
+}) => {
   const onSetValue = (e) => {
-    setValue(e.target.value);
     handlerChange(e.target.value);
   };
+
   return (
     <div className="input">
       <label className="input__label" htmlFor={htmlFor}>
@@ -14,17 +20,19 @@ const Input = ({ handlerChange, label, htmlFor, placeholder }) => {
       </label>
       <input
         className="input__input"
-        type="text"
+        type={type}
         id={htmlFor}
-        value={value}
+        value={currentValue}
         onChange={onSetValue}
         placeholder={placeholder}
       />
-      <img
-        src="/images/btn/check-circle-icon.svg"
-        alt="check-circle-icon"
-        className="input__icon"
-      />
+      {isIcon && (
+        <img
+          src="/images/btn/check-circle-icon.svg"
+          alt="check-circle-icon"
+          className="input__icon"
+        />
+      )}
     </div>
   );
 };
